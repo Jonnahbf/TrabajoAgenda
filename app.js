@@ -58,6 +58,10 @@ function validacion(){
         alert("Debe llenar el campo nombre");
         return false;
     }
+    if( apellido == null || apellido.length == 0 || /^\s+$/.test(apellido) ) {
+        alert("Debe llenar el campo apellido");
+        return false;
+    }
     if( edad == null || edad.length == 0 || /^\s+$/.test(edad) ) {
         alert("Debe llenar el campo edad");
         return false;
@@ -66,10 +70,7 @@ function validacion(){
         alert("Debe llenar el campo domicilio");
         return false;
     }
-    if( apellido == null || apellido.length == 0 || /^\s+$/.test(apellido) ) {
-        alert("Debe llenar el campo apellido");
-        return false;
-    }
+  
     valor = document.getElementById("tel").value;
     if( isNaN(valor) ) {
         alert("Debe introducir un numero de telefono correcto");
