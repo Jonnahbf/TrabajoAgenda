@@ -44,9 +44,37 @@ function crearTR(e){
     nnombre.value = "";
     aapellido.value = "";
     eedad.value = "";
-    ssexo.value = "";
     ddomicilio.value = "";
-    nnacionalidad.value = "";
     ttel.value = "";
+    return true;
+}
+
+function validacion(){
+    var nombre = document.getElementById("nombre").value;
+    var apellido = document.getElementById("apellido").value;
+    var edad = document.getElementById("edad").value;
+    var domicilio = document.getElementById("domicilio").value;
+    if( nombre == null || nombre.length == 0 || /^\s+$/.test(nombre) ) {
+        alert("Debe llenar el campo nombre");
+        return false;
+    }
+    if( edad == null || edad.length == 0 || /^\s+$/.test(edad) ) {
+        alert("Debe llenar el campo edad");
+        return false;
+    }
+    if( domicilio == null || domicilio.length == 0 || /^\s+$/.test(domicilio) ) {
+        alert("Debe llenar el campo domicilio");
+        return false;
+    }
+    if( apellido == null || apellido.length == 0 || /^\s+$/.test(apellido) ) {
+        alert("Debe llenar el campo apellido");
+        return false;
+    }
+    valor = document.getElementById("tel").value;
+    if( isNaN(valor) ) {
+        alert("Debe introducir un numero de telefono correcto");
+        return false;
+    }
+    crearTR();
     return true;
 }

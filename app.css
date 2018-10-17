@@ -5,8 +5,28 @@
     color:blue;
 }
 
+#total{
+    width:100%;
+}
+
+div{
+    display: inline;
+}
+
+#Nuevo_Contacto{
+    width: 40%;
+    float: left;
+    margin-left: 100px;
+}
+
+#Tabla_Contacto{
+    width: 50%;
+    float: left;
+}
+
 .frm{
     margin-bottom: 10px;
+    display: block;
 }
 
 .sub{
