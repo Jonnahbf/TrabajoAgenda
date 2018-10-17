@@ -1,4 +1,4 @@
-function crearTR(e){
+function crearTR(){
     var tabla = document.getElementById("tabla");
     var tr = document.createElement("tr");
 
@@ -46,7 +46,6 @@ function crearTR(e){
     eedad.value = "";
     ddomicilio.value = "";
     ttel.value = "";
-    return true;
 }
 
 function validacion(){
