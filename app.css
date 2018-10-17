@@ -1,0 +1,18 @@
+#titulo{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color:blue;
+}
+
+.frm{
+    margin-bottom: 10px;
+}
+
+.sub{
+    margin-left: 70px;
+}
+
+#tabla{
+    margin: solid 1px;
+}
