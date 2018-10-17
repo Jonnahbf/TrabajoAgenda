@@ -14,5 +14,10 @@
 }
 
 #tabla{
-    margin: solid 1px;
+    border: solid 1px;
+}
+
+td{
+    border:solid 1px;
+    margin: 5px;
 }

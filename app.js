@@ -1,10 +1,3 @@
-function validarform() {
-    var x = document.getElementById("tel").value;
-    if (x == "") {
-        alert("Name must be filled out");
-    }
-}
-
 function crearTR(e){
     var tabla = document.getElementById("tabla");
     var tr = document.createElement("tr");
@@ -35,16 +28,17 @@ function crearTR(e){
 
     var nacionalidad = document.createElement("td");
     nacionalidad.innerHTML = nnacionalidad.value;
-    tr.appendChild(nacionalidad);
 
     var domicilio = document.createElement("td");
     domicilio.innerHTML = ddomicilio.value;
 
     var tel = document.createElement("td");
     tel.innerHTML = ttel.value;
-    tr.appendChild(tel);
 
     tr.appendChild(domicilio);
+    tr.appendChild(nacionalidad);
+    tr.appendChild(tel);
+
     tabla.appendChild(tr);
 
     nnombre.value = "";
